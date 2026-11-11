@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>프레임 제작 생산성 개선 — v2.0</title>
+  <!-- seo-kit: 공유 미리보기 · 아이콘(주소를 옮기면 아래 주소 3곳을 내 주소로) -->
+  <link rel="canonical" href="https://data10-08.jobability.co.kr/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="건화">
+  <meta property="og:title" content="건화 · 프레임 제작 생산성 개선">
+  <meta property="og:description" content="일일 실적과 현장 측정으로 목표 대수 대비 달성률(90% 선)을 관리하고, 공정별 작업시간·손실·병목과 인원 배분, 개선 전후 단가 절감을 분석해 표준작업서 초안까지 만드는 브라우저 도구입니다.">
+  <meta property="og:url" content="https://data10-08.jobability.co.kr/">
+  <meta property="og:image" content="https://data10-08.jobability.co.kr/og-image.png">
+  <meta property="og:image:secure_url" content="https://data10-08.jobability.co.kr/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="건화 · 프레임 제작 생산성 개선">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="건화 · 프레임 제작 생산성 개선">
+  <meta name="twitter:description" content="일일 실적과 현장 측정으로 목표 대수 대비 달성률(90% 선)을 관리하고, 공정별 작업시간·손실·병목과 인원 배분, 개선 전후 단가 절감을 분석해 표준작업서 초안까지 만드는 브라우저 도구입니다.">
+  <meta name="twitter:image" content="https://data10-08.jobability.co.kr/og-image.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <!-- /seo-kit -->
+  <meta name="description" content="일일 실적으로 목표 대수 대비 달성률을 관리하고, 현장 측정으로 공정별 작업시간·손실을 재어 병목공정·인원 배분·개선 전후 단가 절감을 분석하며 표준작업서 초안을 만드는 브라우저 도구">
+  <meta name="robots" content="noindex">
+  <!-- fresh-guard v3 (2026-10-21) — 배포 직후에도 강력 새로고침 없이 새 화면을 보이게 한다.
+       GitHub Pages 는 HTML 을 max-age=600 으로 준다. 브라우저도, GitHub 앞단 캐시(Fastly)도 그동안 옛 HTML 을 줄 수 있다
+       (Cloudflare 는 HTML 을 캐시하지 않는다 — cf-cache-status: DYNAMIC 실측).
+       여기서 하는 일: 지금 화면의 Last-Modified(document.lastModified)와 서버의 최신 값(HEAD)을 비교해,
+       서버 쪽이 새로우면 「?_fg=<판>」을 붙인 주소로 한 번 옮겨 간다. 질의가 붙은 주소는 브라우저 캐시에도 Fastly 캐시에도
+       없어 반드시 새 판이 온다(실측 x-cache: MISS). 붙은 _fg 는 새 화면이 뜨자마자 주소창에서 지운다. 같은 판으로 두 번 돌지 않는다.
+       v2: 열 때만이 아니라 앱 안 메뉴 이동(pushState·hashchange·popstate) 때도 15초에 한 번까지 다시 잰다(열어 둔 탭).
+       v3: location.reload() 대신 질의 붙은 주소로 — reload 가 Fastly 에 남은 옛 판을 다시 받아 멈추던 것(10-21 build-data 강의안).
+       탭 전환·포커스로는 옮기지 않는다(입력 유실). ETag 는 Cloudflare 가 지워서 쓸 수 없다. 원본: dreamit-1000/scripts/fresh-guard/guard.html -->
+  <script>(function(){try{var L=location,P='_fg',h=window.history,q=L.search;if(/[?&]_fg=/.test(q)&&h&&h.replaceState){q=q.replace(/([?&])_fg=[^&]*&?/,'$1').replace(/[?&]$/,'');h.replaceState(h.state,'',L.pathname+q+L.hash);}var d=Date.parse(document.lastModified),u=L.pathname+L.search,k='__fresh_guard',t=0;if(!d||!window.fetch||!window.sessionStorage)return;var g=function(s,v){return s+(s.indexOf('?')<0?'?':'&')+P+'='+v;};var c=function(){var n=Date.now();if(n-t<15000)return;t=n;fetch(g(u,n),{method:'HEAD',cache:'no-store'}).then(function(r){var lm=r.headers.get('last-modified'),f=lm&&Date.parse(lm);if(!f||f<=d+1000)return;if(sessionStorage.getItem(k)===lm)return;sessionStorage.setItem(k,lm);L.replace(g(L.pathname+L.search,f)+L.hash);})['catch'](function(){});};c();var p=h&&h.pushState;if(p)h.pushState=function(){var x=p.apply(this,arguments);c();return x;};addEventListener('hashchange',c);addEventListener('popstate',c);}catch(e){}})();</script>
+  <link rel="stylesheet" href="css/style.css?v=2026-11-11.8">
+  <!-- auth-kit: 로그인 전에는 도구 화면을 감춘다(js/auth.js 가 판정 뒤 푼다) -->
+  <script>document.documentElement.classList.add('auth-lock')</script>
+  <link rel="stylesheet" href="css/auth.css?v=2026-11-11.8">
+  <link rel="stylesheet" href="css/board.css?v=2026-11-11.8">
+  <!-- /auth-kit -->
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <!-- 틀: 왼쪽 메뉴 + 위 머리 (data09-17 디자인) -->
+  <div class="shell">
+    <aside class="sidebar" id="sidebar" aria-label="메뉴">
+      <a class="side-brand" href="#/home">
+        <span class="brand-mark ai-dot" aria-hidden="true">FR</span>
+        <span class="brand-text">프레임 제작<br>생산성 개선</span>
+      </a>
+      <nav class="side-nav" id="nav" aria-label="주 메뉴"></nav>
+      <div class="side-bottom">
+        <nav aria-label="설정 메뉴" id="navBottom"></nav>
+        <a class="side-ai" href="#/report"><span class="ai-dot" aria-hidden="true">AI</span><span>계산한 사실로<br>AI 가 개선안 정리를 돕습니다.</span></a>
+      </div>
+    </aside>
+    <div class="side-backdrop" id="sideBackdrop" hidden></div>
+
+    <div class="content">
+      <header class="topbar">
+        <button type="button" class="menu-btn" id="menuBtn" aria-controls="sidebar" aria-expanded="false" aria-label="메뉴 열기">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <a class="top-title" href="#/home">
+          <span class="top-name">프레임 제작 생산성 개선</span>
+          <span class="top-sub" id="dataChip">달성률 · 병목공정 · 손실시간 · 인원 배분 · 표준작업서</span>
+        </a>
+        <div class="top-user">
+          <svg class="avatar" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#e6ebf2"/><circle cx="20" cy="15.5" r="6.5" fill="#1b2a44"/><path d="M8 32c2-6 7-9 12-9s10 3 12 9" fill="#1b2a44"/></svg>
+          <span class="user-text"><span class="role">제작팀 <span class="bar-sep" aria-hidden="true">|</span> 프레임 제작</span><span id="nowText" class="now"></span></span>
+        </div>
+      </header>
+
+      <div id="sampleBanner" class="sample-banner" hidden></div>
+      <div id="storeBanner" class="store-banner" hidden></div>
+
+      <main id="main" class="inner main" tabindex="-1"></main>
+
+      <footer class="site-footer">
+        <div class="inner">v2.0 · 파일과 데이터는 서버로 보내지 않고 이 브라우저 안에서만 읽고 저장합니다 · AI 자동 보내기는 설정한 경우에만</div>
+      </footer>
+    </div>
+  </div>
+
+  <div id="printSheet" aria-hidden="true"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <!-- 로컬 파일(file://)로 열어도 돌도록 module 이 아닌 일반 스크립트로 불러옵니다 -->
+  <script src="vendor/xlsx.full.min.js?v=2026-11-11.8"></script>
+  <script src="js/logic.js?v=2026-11-11.8"></script>
+  <script src="js/sample-data.js?v=2026-11-11.8"></script>
+  <script src="js/store.js?v=2026-11-11.8"></script>
+  <script src="js/charts.js?v=2026-11-11.8"></script>
+  <script src="js/ai-endpoint.js?v=2026-11-11.8"></script>
+  <script src="js/ai-panel.js?v=2026-11-11.8"></script>
+  <script src="js/app.js?v=2026-11-11.8"></script>
+  <!-- auth-kit: 로그인 · 사용 신청 · 승인(정본 data10-00/kit/auth) -->
+  <script src="vendor/supabase.js?v=2026-11-11.8"></script>
+  <script src="js/auth-config.js?v=2026-11-11.8"></script>
+  <script src="js/board.js?v=2026-11-11.8"></script>
+  <script src="js/auth.js?v=2026-11-11.8"></script>
+  <!-- /auth-kit -->
+</body>
+</html>
